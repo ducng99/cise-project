@@ -1,0 +1,30 @@
+.category-dropdown {
+  display: inline-block;
+}
+
+.date-dropdown {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.sort-dropdown {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.authority-dropdown {
+text-align:center; 
+padding-top: 10px;
+ width:190px;
+ display: inline-block;
+}
+
+.fil{
+	color:blue;
+	font-size: 20px;
+	margin-top:50px;
+}
+
+#containter {
+  text-align: center;
+}

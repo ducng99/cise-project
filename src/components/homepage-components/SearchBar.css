@@ -1,0 +1,26 @@
+.extendedbar {
+  width: 600px;
+  height: 30px;
+}
+
+.foo{
+	color:white;
+	font-size: 80px;
+	text-shadow: 0 0 3px blue; 
+	text-align: center
+}
+
+#heading {
+  padding-top: 100px;
+}
+
+.middle{
+text-align:center; 
+padding-top: 10px;
+
+}
+
+.register{
+padding-top: 15px;
+color:blue;
+}
