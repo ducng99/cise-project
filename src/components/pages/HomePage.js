@@ -47,7 +47,7 @@ class HomePage extends React.Component {
     
     handleSort(text)
     {
-        let tmpEntries = this.state.results;
+        let tmpEntries = this.state.sortedResults;
         
         switch (text)
         {
