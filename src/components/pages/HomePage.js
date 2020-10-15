@@ -47,15 +47,15 @@ class HomePage extends React.Component {
     
     handleSort(text)
     {
-        this.state.sortedResults = this.state.results;
+        let tmpEntries = this.state.results;
         
         switch (text)
         {
             case "ID":
-                this.state.sortedResults.sort((a, b) => a.EvidenceID - b.EvidenceID);
+                tmpEntries.sort((a, b) => a.EvidenceID - b.EvidenceID);
                 break;
             case "Title":
-                this.state.sortedResults.sort((a, b) => 
+                tmpEntries.sort((a, b) => 
                 {
                     let aT = a.EvidenceTitle.toLowerCase(), bT = b.EvidenceTitle.toLowerCase();
                     
@@ -65,7 +65,7 @@ class HomePage extends React.Component {
                 });
                 break;
             case "Author":
-                this.state.sortedResults.sort((a, b) => 
+                tmpEntries.sort((a, b) => 
                 {
                     let aT = a.EvidenceAuthor.toLowerCase(), bT = b.EvidenceAuthor.toLowerCase();
                     
@@ -75,10 +75,10 @@ class HomePage extends React.Component {
                 });
                 break;
             case "Date":
-                this.state.sortedResults.sort((a, b) => a.EvidenceDate - b.EvidenceDate);
+                tmpEntries.sort((a, b) => a.EvidenceDate - b.EvidenceDate);
                 break;
             case "DOI":
-                this.state.sortedResults.sort((a, b) => 
+                tmpEntries.sort((a, b) => 
                 {
                     let aT = a.EvidenceDOI.toLowerCase(), bT = b.EvidenceDOI.toLowerCase();
                     
@@ -88,6 +88,8 @@ class HomePage extends React.Component {
                 });
                 break;
         }
+        
+        this.setState({sortedResults: tmpEntries});
     }
     
     handleDateLimit(startDate, endDate)
