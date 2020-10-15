@@ -48,11 +48,11 @@ class SearchFilter extends React.Component {
 
                     {/* Sort by Filter */}
                     <DropdownButton id="dropdown-basic-button" className="sort-dropdown" title="Sort by">
-                        <Dropdown.Item onClick={this.props.sortByHandle('ID')}>ID</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.sortByHandle('Title')}>Title</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.sortByHandle('Author')}>Author</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.sortByHandle('Date')}>Date</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.sortByHandle('DOI')}>DOI</Dropdown.Item>
+                        <Dropdown.Item onClick={() => this.props.sortByHandle('ID')}>ID</Dropdown.Item>
+                        <Dropdown.Item onClick={() => this.props.sortByHandle('Title')}>Title</Dropdown.Item>
+                        <Dropdown.Item onClick={() => this.props.sortByHandle('Author')}>Author</Dropdown.Item>
+                        <Dropdown.Item onClick={() => this.props.sortByHandle('Date')}>Date</Dropdown.Item>
+                        <Dropdown.Item onClick={() => this.props.sortByHandle('DOI')}>DOI</Dropdown.Item>
                     </DropdownButton>
 
                     <div className="form-inline">
